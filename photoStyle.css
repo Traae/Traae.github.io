@@ -1,0 +1,5 @@
+/* display settings for the specific image currently being used as the headshot */
+.photo {
+  border-image: round;
+  border-width: 75%;
+}

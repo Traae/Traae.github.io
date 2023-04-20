@@ -4,12 +4,44 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <!-- <link rel="stylesheet" href="indexStyle.css" />
+    <link rel="stylesheet" href="photoStyle.css" /> -->
+    
+    <link rel="stylesheet" href="photoStyle.css" />
+    
+    [if IE]>
+      <link rel="stylesheet" href="desktopIEStyle.css" />
+    <![endif]
+
+    [if !IE]>
+    <link rel="stylesheet" href="desktopStyle.css" />
+    <![endif]
+
+    [if IEMobile]>
+      <link href="mobileStyle.css" rel="stylesheet" />
+    <![endif]
+
+
+    <title>Home: Traae Bloxham, Computer Scientist.</title>
   </head>
   <body>
-    <header></header>
-    <nav></nav>
-    <article></article>
+    <header>
+      <h1 class="headingFont"></h1>
+    </header>
+    <nav id="navigationBar"></nav>
+    <article>
+      <img
+        class="photo headshot"
+        src="./assets/headshot.jpg"
+        alt="Traae's Headshot photo."
+      />
+      <section id="introBio">
+        <h2 class="headingFont"></h2>
+        <p></p>
+      </section>
+      <current id="currentStatus"> h2 </current>
+      <section id="contactInfo"></section>
+    </article>
     <aside></aside>
     <footer></footer>
   </body>
