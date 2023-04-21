@@ -57,6 +57,11 @@ header {
   align-self: auto;
 }
 
+.ToDo {
+  font-style: bold;
+  font-color: #5b0;
+}
+
 /* Hyperlink settings */
 /* a:link {
   color: #160066;
