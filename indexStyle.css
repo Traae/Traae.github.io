@@ -2,7 +2,7 @@
   --blue: hsl(216, 71%, 56%);
   --green: hsl(136, 71%, 56%);
   --yellow: hsl(56, 71%, 56%);
-  --background: #e9e9e9;
+  --background: #e7e5e5;
   --headingFont: sans-serif;
   --writingFont: serif;
 }
@@ -17,10 +17,6 @@
 .centeringContainer {
   width: 800px;
   margin: 0 auto;
-}
-
-body {
-  font-family: ;
 }
 
 /* headshot element positioning */
@@ -38,6 +34,13 @@ body {
 
 header {
   text-align: center;
+  /* offset-x | offset-y | blur-radius | color */
+  text-shadow: 0px 0px 4px #fff;
+  background-color: var(--blue);
+}
+
+header h1,
+h2 {
   background-color: var(--blue);
 }
 
@@ -51,15 +54,30 @@ header {
 
 /* Section Container settings */
 #navigationBar {
+  background-color: var(--green);
+
   display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
 }
+
 .navigationItem {
-  align-self: auto;
+  /* align-self: flex-start; */
+  background-color: inherit;
+  flex: 1;
+}
+
+.navigationItem button {
+  background-color: inherit;
+  align-self: flex-end;
+  text-align: center;
+  padding-left: 2px;
+  padding-right: 2px;
 }
 
 .ToDo {
   font-style: bold;
-  font-color: #5b0;
 }
 
 /* Hyperlink settings */
