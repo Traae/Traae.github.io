@@ -2,7 +2,7 @@
   --blue: hsl(216, 71%, 56%);
   --green: hsl(136, 71%, 56%);
   --yellow: hsl(56, 71%, 56%);
-  --background: #e7e5e5;
+  --background: hsl(0, 0%, 90%);
   --headingFont: sans-serif;
   --writingFont: serif;
 }
@@ -19,24 +19,32 @@
   margin: 0 auto;
 }
 
+header {
+  text-align: center;
+  position: relative;
+  /* offset-x | offset-y | blur-radius | color */
+  text-shadow: 0px 0px 4px #fff;
+  background-color: var(--blue);
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 25px;
+}
+
 /* headshot element positioning */
 .headshot {
   align-content: center;
   /* object-position: 50% 50%; */
+  display: float;
   width: 50px;
   border: 5px solid var(--blue);
+  position: absolute;
+  top: 67px;
+  left: 375px;
 }
 
 /* Basic Font Stlyezation */
 .headingFont {
   font-family: sans-serif;
-}
-
-header {
-  text-align: center;
-  /* offset-x | offset-y | blur-radius | color */
-  text-shadow: 0px 0px 4px #fff;
-  background-color: var(--blue);
 }
 
 header h1,
@@ -55,25 +63,33 @@ h2 {
 /* Section Container settings */
 #navigationBar {
   background-color: var(--green);
-
+  padding-top: 4px;
+  padding-bottom: 4px;
   display: flex;
+  flex-direction: row;
   align-items: center;
-  justify-content: flex-start;
-  gap: 10px;
+  justify-content: space-between;
+  gap: 0px;
 }
 
 .navigationItem {
-  /* align-self: flex-start; */
   background-color: inherit;
   flex: 1;
 }
 
-.navigationItem button {
+.navigationItem {
   background-color: inherit;
-  align-self: flex-end;
   text-align: center;
   padding-left: 2px;
   padding-right: 2px;
+}
+
+.leftOfPic {
+  justify-self: flex-start;
+}
+
+.rightOfPic {
+  justify-self: flex-end;
 }
 
 .ToDo {
