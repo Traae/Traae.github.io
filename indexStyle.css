@@ -84,12 +84,16 @@ h2 {
   padding-right: 2px;
 }
 
+.resume {
+  white-space: nowrap;
+}
+
 .leftOfPic {
-  justify-self: flex-start;
+  justify-self: left;
 }
 
 .rightOfPic {
-  justify-self: flex-end;
+  justify-self: right;
 }
 
 .ToDo {
