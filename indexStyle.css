@@ -1,10 +1,11 @@
 :root {
-  --blue: hsl(216, 71%, 56%);
-  --green: hsl(136, 71%, 56%);
-  --yellow: hsl(56, 71%, 56%);
+  --blue: hsl(216, 90%, 62%);
+  --green: hsl(136, 90%, 62%);
+  --yellow: hsl(56, 90%, 62%);
   --background: hsl(0, 0%, 90%);
   --headingFont: sans-serif;
   --writingFont: serif;
+  --originalWidth: 100vw;
 }
 
 * {
@@ -15,7 +16,7 @@
 }
 
 .centeringContainer {
-  width: 800px;
+  width: 80vw;
   margin: 0 auto;
 }
 
@@ -28,6 +29,12 @@ header {
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 25px;
+}
+
+header::before {
+  /* position: absolute; */
+  background-color: var(--yellow);
+  width: 100vw;
 }
 
 /* headshot element positioning */
@@ -56,10 +63,6 @@ h2 {
   font-family: serif;
 }
 
-.buttonFont {
-  font-family: sans-serif;
-}
-
 /* Section Container settings */
 #navigationBar {
   background-color: var(--green);
@@ -75,6 +78,7 @@ h2 {
 .navigationItem {
   background-color: inherit;
   flex: 1;
+  text-shadow: 0px 0px 4px #ffffff;
 }
 
 .navigationItem {
@@ -86,14 +90,28 @@ h2 {
 
 .resume {
   white-space: nowrap;
+  padding-left: 4px;
 }
 
-.leftOfPic {
-  justify-self: left;
+/* unvisited link */
+.navigationItem:link {
+  color: #000000;
+  text-decoration: none black;
 }
 
-.rightOfPic {
-  justify-self: right;
+/* visited link */
+.navigationItem:visited {
+  color: #000000;
+}
+
+/* mouse over link */
+.navigationItem:hover {
+  color: #000;
+}
+
+/* selected link */
+.navigationItem:active {
+  color: #000;
 }
 
 .ToDo {
