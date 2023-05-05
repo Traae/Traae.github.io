@@ -1,8 +1,11 @@
 # ProfessionalWebsite
-A repo for a personal professional website. Partially a web dev practices project. 
+
+A repo for a personal professional website. Partially a web dev practices project.
 
 ## Features
+
 The site will need to have:
+
 - A Readable Design:
   - easy navigation,
   - simple design, Desktop and Mooble
@@ -14,26 +17,20 @@ The site will need to have:
   - A CV / Story page,
   - A Portfolio Page for Major Skills,
   - A page denoting minor or hobbie skills.
-  
-  
- ## TO DO
- Roughly in the order I should do it:
- - site layout draft
- - initial design and development in html and css
- - skelton the web site with place holders
- - content for landing page
- - Domain name and Site hosting
- - CI/CD integration with this repo (preferably, demends on hosting service.)
- - Resume Page design
- - Resume page file hosting
- - Resume page content
- - CV Page design
- - CV Page Content
- - Portfolio Page design
- - Portfolio Page Content - setup for extensibility
- - Other Skills portfolio page design
- - Other SKills page content
- - Request a proof read by freinds and family.
- - corrections.
- - List website on my linked in and github.
- 
+
+## TO DO
+
+Roughly in the order I should do it:
+
+CHANGE OF PLANS
+
+I don't really care about making some extravagent website for myself, I'd rather learn stuff through smaller or more usefull projects.
+
+With this in mind:
+
+- Figure out how to do the lay I want (easy)
+- make it all relative to the screen size and have a min and max (easy-med)
+- Write some words about myself (hard)
+- set up a download link for my resume (easy?)
+- set up links to other places (easy)
+- get it up and hosted (easy???)
