@@ -16,7 +16,7 @@
 }
 
 .centeringContainer {
-  width: 80vw;
+  width: 60vw;
   margin: 0 auto;
 }
 
@@ -29,6 +29,8 @@ header {
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 25px;
+  padding-left: 20vw;
+  padding-right: 20vw;
 }
 
 header::before {
