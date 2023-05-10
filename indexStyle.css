@@ -3,40 +3,58 @@
   --green: hsl(136, 90%, 62%);
   --yellow: hsl(56, 90%, 62%);
   --background: hsl(0, 0%, 90%);
-  --headingFont: sans-serif;
-  --writingFont: serif;
-  --originalWidth: 100vw;
 }
 
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  background-color: var(--background);
+  /* background-color: var(--background); */
 }
 
-.centeringContainer {
-  width: 60vw;
+.backingContainer {
+}
+
+#headingStripe {
+  background-color: var(--blue);
+  width: 100vw;
+  padding-bottom: 20px;
+}
+#navigationStripe {
+  background-color: var(--green);
+  width: 100vw;
+  padding-bottom: 20px;
+}
+#bodyBackground {
+  background-color: var(--yellow);
+  width: 100vw;
+}
+#footingStripe {
+  background-color: var(--green);
+  width: 100vw;
+  padding-top: 20px;
+}
+
+.centeredContent {
+  padding-left: 20vw;
+  padding-right: 20vw;
+  padding-bottom: 2vw;
+  max-width: 90vw;
+  min-width: 60vw;
   margin: 0 auto;
 }
 
 header {
   text-align: center;
-  position: relative;
+
   /* offset-x | offset-y | blur-radius | color */
   text-shadow: 0px 0px 4px #fff;
   background-color: var(--blue);
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 25px;
-  padding-left: 20vw;
-  padding-right: 20vw;
-}
-
-header::before {
-  /* position: absolute; */
-  background-color: var(--yellow);
-  width: 100vw;
+  /* padding-left: 20vw;
+  padding-right: 20vw; */
 }
 
 /* headshot element positioning */
@@ -48,7 +66,7 @@ header::before {
   border: 5px solid var(--blue);
   position: absolute;
   top: 67px;
-  left: 375px;
+  left: calc(50vw - 25px);
 }
 
 /* Basic Font Stlyezation */
@@ -118,6 +136,10 @@ h2 {
 
 .ToDo {
   font-style: bold;
+}
+
+article {
+  background-color: var(--background);
 }
 
 /* Hyperlink settings */
