@@ -2,7 +2,7 @@
   --blue: hsl(216, 90%, 62%);
   --green: hsl(136, 90%, 62%);
   --yellow: hsl(56, 90%, 62%);
-  --background: hsl(0, 0%, 90%);
+  --background: rgb(252, 252, 252);
 }
 
 * {
@@ -90,6 +90,7 @@ h2 {
   padding-bottom: 4px;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   gap: 0px;
@@ -140,16 +141,23 @@ h2 {
 
 article {
   background-color: var(--background);
+  /* margin: default;
+  padding: default; */
 }
 
-/* Hyperlink settings */
-/* a:link {
-  color: #160066;
-  text-decoration: underline wavy black;
+p,
+li {
+  padding-top: 3px;
 }
-a:hover {
-  color: #02bec4;
+
+h3 {
+  padding-top: 12px;
 }
-a:visited {
-  color: #5b0b63;
-} */
+
+ul,
+ol {
+  list-style-position: inside;
+}
+li {
+  margin-left: 12px;
+}
