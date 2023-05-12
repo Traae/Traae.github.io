@@ -12,9 +12,6 @@
   /* background-color: var(--background); */
 }
 
-.backingContainer {
-}
-
 #headingStripe {
   background-color: var(--blue);
   width: 100vw;
@@ -26,21 +23,19 @@
   padding-bottom: 20px;
 }
 #bodyBackground {
-  background-color: var(--yellow);
+  background-color: var(--background);
   width: 100vw;
 }
 #footingStripe {
-  background-color: var(--green);
+  background-color: var(--blue);
   width: 100vw;
   padding-top: 20px;
 }
 
 .centeredContent {
-  padding-left: 20vw;
-  padding-right: 20vw;
-  padding-bottom: 2vw;
-  max-width: 90vw;
-  min-width: 60vw;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  max-width: 94vw;
   margin: 0 auto;
 }
 
@@ -73,40 +68,47 @@ header {
 .headingFont {
   font-family: sans-serif;
 }
-
+.writingFont {
+  font-family: serif;
+}
 header h1,
 h2 {
   background-color: var(--blue);
 }
 
-.writingFont {
-  font-family: serif;
+#headingBorderStripe {
+  background-color: var(--yellow);
+  height: 20px;
 }
 
-/* Section Container settings */
-#navigationBar {
-  background-color: var(--green);
-  padding-top: 4px;
-  padding-bottom: 4px;
+#mainContent {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  align-items: center;
   justify-content: space-between;
   gap: 0px;
+}
+
+/* Section Container settings */
+#navigationBox {
+  background-color: var(--background);
+  border: 4px solid var(--green);
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
 }
 
 .navigationItem {
   background-color: inherit;
   flex: 1;
-  text-shadow: 0px 0px 4px #ffffff;
+  padding-left: 4px;
+  padding-right: 4px;
 }
 
 .navigationItem {
   background-color: inherit;
-  text-align: center;
-  padding-left: 2px;
-  padding-right: 2px;
+  text-align: left;
 }
 
 .resume {
@@ -117,7 +119,7 @@ h2 {
 /* unvisited link */
 .navigationItem:link {
   color: #000000;
-  text-decoration: none black;
+  text-decoration: black;
 }
 
 /* visited link */
@@ -141,6 +143,7 @@ h2 {
 
 article {
   background-color: var(--background);
+  width: clamp(60vw, 75vw, 90vw);
   /* margin: default;
   padding: default; */
 }
