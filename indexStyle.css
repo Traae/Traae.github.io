@@ -1,80 +1,89 @@
 :root {
+  /* Set up  general sizing variables */
+
+  font-family: "Times New Roman", Times, serif;
+  --headingFont: "Courier New", Courier, monospace;
+  --headingSize: min(6vw, 26px);
+  font-size: min(4vw, 16px);
+
+  /* root font is now 10px, This reccomendation is taken from: 
+  https://www.sitepoint.com/understanding-and-using-rem-units-in-css/  */
+
   --blue: hsl(216, 90%, 62%);
   --green: hsl(136, 90%, 62%);
   --yellow: hsl(56, 90%, 62%);
   --background: rgb(252, 252, 252);
 
-  /* Set up  general sizing variables */
+  --headShotSize: min(15vw, 150px);
 }
 
 * {
+  /* Set all boxes to defualt at content size only */
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  /* background-color: var(--background); */
 }
+
+/* Background color and sizing */
 
 #headingStripe {
   background-color: var(--blue);
-  width: 100vw;
-  padding-bottom: 20px;
+  padding-bottom: calc(0.5 * var(--headShotSize));
 }
-#navigationStripe {
+#headingBorderStripe {
   background-color: var(--green);
-  width: 100vw;
-  padding-bottom: 20px;
+  height: calc(0.5 * var(--headShotSize));
 }
 #bodyBackground {
   background-color: var(--background);
-  width: 100vw;
 }
 #footingStripe {
   background-color: var(--blue);
-  width: 100vw;
-  padding-top: 20px;
+
+  padding: 5vw;
 }
 
+/* Heading Settings */
+
+h1,
+h2,
+h3 {
+  font-family: var(--headingFont);
+}
+
+h1 {
+  font-size: var(--headingSize);
+}
+h2 {
+  font-size: calc(5 / 6 * var(--headingSize));
+}
+h3 {
+  font-size: calc(4 / 6 * var(--headingSize));
+}
 header {
   text-align: center;
-
-  /* offset-x | offset-y | blur-radius | color */
   text-shadow: 0px 0px 4px #fff;
-  background-color: var(--blue);
   margin-left: auto;
   margin-right: auto;
-  padding-bottom: 25px;
-  /* padding-left: 20vw;
-  padding-right: 20vw; */
 }
 
 /* headshot element positioning */
 .headshot {
   align-content: center;
-  /* object-position: 50% 50%; */
-  display: float;
-  width: 50px;
+  width: var(--headShotSize);
   border: 5px solid var(--blue);
   position: absolute;
-  top: 67px;
-  left: calc(50vw - 25px);
+
+  top: calc(2 * var(--headingSize));
+
+  left: calc(50vw - calc(0.5 * var(--headShotSize)));
+
+  border-image: round;
+  border-radius: 60%;
+  object-fit: contain;
 }
 
 /* Basic Font Stlyezation */
-.headingFont {
-  font-family: sans-serif;
-}
-.writingFont {
-  font-family: serif;
-}
-header h1,
-h2 {
-  background-color: var(--blue);
-}
-
-#headingBorderStripe {
-  background-color: var(--yellow);
-  height: 20px;
-}
 
 #mainContent {
   display: flex;
@@ -113,28 +122,24 @@ h2 {
 
 article {
   background-color: var(--background);
-  width: clamp(40vw, 60vw, 80vw);
+  width: clamp(60vw, 60vw, 80vw);
   margin-right: clamp(0vw, 20vw, 40vw);
   margin-left: auto;
-  /* border: 4px solid black; */
-  /* width: clamp(400px 500px 90vw); */
-}
-
-p {
-  padding-top: 10px;
-}
-li {
-  padding-top: 3px;
 }
 
 h3 {
   padding-top: 12px;
 }
+p {
+  padding-top: 10px;
+}
+
+li {
+  padding-top: 3px;
+  margin-left: 12px;
+}
 
 ul,
 ol {
   list-style-position: inside;
-}
-li {
-  margin-left: 12px;
 }
