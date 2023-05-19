@@ -32,7 +32,7 @@
 }
 #headingBorderStripe {
   background-color: var(--green);
-  height: calc(0.5 * var(--headShotSize));
+  height: calc(0.5 * var(--headShotSize) + 5px);
 }
 #bodyBackground {
   background-color: var(--background);
@@ -74,7 +74,7 @@ header {
   border: 5px solid var(--blue);
   position: absolute;
 
-  top: calc(2 * var(--headingSize));
+  top: calc(2 * var(--headingSize) + 5px);
 
   left: calc(50vw - calc(0.5 * var(--headShotSize)));
 
