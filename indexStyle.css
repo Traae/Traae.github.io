@@ -99,7 +99,7 @@ header {
 }
 
 /* Section Container settings */
-#navigationBox {
+.navigationBox {
   background-color: var(--background);
   border-top: 4px solid var(--blue);
   border-bottom: 4px solid var(--blue);
@@ -120,13 +120,23 @@ header {
   text-align: left;
 }
 
+.navigationSection {
+  padding-top: 4px;
+  padding-left: 16px;
+  font-weight: bold;
+}
+
 article {
   background-color: var(--background);
   width: clamp(60vw, 60vw, 80vw);
   margin-right: clamp(0vw, 20vw, 40vw);
   margin-left: auto;
 }
-
+.footNav {
+  border-top: var(--yellow);
+  border-bottom: var(--yellow);
+  background-color: var(--blue);
+}
 h3 {
   padding-top: 12px;
 }
