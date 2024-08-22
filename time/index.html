@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="index.css" />
 
-    <title>USPS Time Tool</title>
+    <title>Postal Time Tool</title>
   </head>
   <body>
     <section id="headingStripe">
       <header>
-        <h1>USPS Time Tool</h1>
+        <h1>Postal Time Tool</h1>
       </header>
     </section>
     <section id="headingBorder1"></section>
@@ -18,26 +18,24 @@
 
     <div id="mainContent">
       <div class="tool clock">
+        <p>Clock</p>
         <p id="uspsclock">0000</p>
         <p id="normalclock">00</p>
       </div>
       <div class="tool convert">
         <!-- This time entry code was taken from this tutorial: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/time
-        
-      <label for="appt">Choose a time for your meeting:</label>
-  
-  <input type="time" id="appt" name="appt" min="09:00" max="18:00" required />
-  
-  <small>Office hours are 9am to 6pm</small> -->
-        <!-- <p>12:00</p>
-        <button onclick="" class="btn">
-          <p>am</p>
-        </button>
-        <button onclick="" class="btn">
-          <p>convert</p>
-        </button>
+        -->
+        <p>Convert to Postal Time</p>
+        <input type="time" id="timeInput" name="timeInput" min="00:00" max="12:00" required />
+        <button onclick="convertToPostalButton()" class="btn">convert</button>
+        <p id="convertToPostal">0000</p>
       </div>
-      <div class="tool stopwatch"></div> -->
+
+
+      <!-- <div class="tool stopwatch">
+
+        <button onclick="" class="btn"></button>
+      </div>  -->
     </div>
        
     </div>
